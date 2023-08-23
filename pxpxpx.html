@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>AMR MARKET </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href='market.css'>
+    
+    
+    
+    </head>
+
+<body>
+
+    
+     <div class="m">
+     
+         
+            
+    <div class="nav1">
+       <div class="nava">
+       <img src="letter-a.png" width="50 px">
+           <input  id='sss' class="search"type="search">
+          
+           </div>
+        
+        <h4 class="home h2" id='sss'>search</h4>
+        <a  class="cat1" href="cat.html" id='a2'>catogries</a>
+        
+        <div class="cart">
+           <a class="png" href="cart.html"><img src="shopping-cart.png" width="40px"></a> 
+        
+            </div>
+        
+ <img class="color" id='d' src="list%20(1).png" width=57px>
+      
+        </div>
+         <ul id= 'list'>
+             <li id='form'></li>
+             <li><a href="index%20market.html">sign in</a></li>
+             <hr>
+         <li id='sellx'>sell your product</li>
+             <hr>
+             <li><a href="cont.html">contacts</a></li>
+             <hr>
+             <li><a href="marketabout.html">about</a></li>
+             <hr>
+         </ul>
+          <h2 class="e3">laptops & monitors</h2>
+             <p class="e4">laptops,monitors& their accssories</p>
+      
+     <table><tr><td><div  id=hp class="c3"><h1 >hp pavillion x455vsdft-ne</h1>
+             <p>wonderfull laptop 512 gb 8 ram  oled  display</p>
+             <h5 class="out">out of stock</h5>
+             
+             <img src="laptop%20x.jpeg"width=26%>
+             <div class="add">
+             <h4 class="pz ps">20000$</h4>
+                 <h3>7899$</h3>
+           
+            
+          
+                   <button class="cartbu">Add to cart</button>
+              </div>
+             <div class="qty3">
+                 <h4> qty</h4>
+              <input class="qty2" type="number">
+                 </div>
+             </div></td><td>  <div class="c3" id='asus'><h1>asus zenbook 15 oled</h1>
+             <h5 class="in">in stock</h5>
+              <p>core i7 12th gen procescor oled display 12ram 265 gb</p>
+             <img src="download%20(2).jpeg" width="30%">
+             
+             <div class="add">
+                 <h4 class="pz">16000$</h4>
+              <button class="cartbu">Add to cart</button>
+                 
+                 <div class="qty3">
+                 <h4> qty</h4>
+              <input class="qty2" type="number">
+                 </div>
+                 </div>
+              
+          
+         </div></td></tr><tr><td>    
+         <div class="c3"id='asus'><h1 >asus zenbook 14</h1>
+             <h5 class="in">in stock</h5>
+              <p>core i9 11th gen procescor lcd  display 12ram 265 gb</p>
+             <img src="download%20(2).jpeg" width="30%">
+             
+             <div class="add">
+                 <h4 class="pz">13000$</h4>
+              <button class="cartbu">Add to cart</button>
+                 <div class="qty3">
+                 <h4> qty</h4>
+              <input class="qty2" type="number">
+                 </div>
+                 
+                 </div>
+              
+          
+         </div></td><td><div class="c3"id='asus'><h1 >asus zenbook 12</h1>
+             <h5 class="in">in stock</h5>
+              <p>core i3 11th gen procescor lcd display 12ram 265 gb</p>
+             <img src="download%20(2).jpeg" width="30%">
+             
+             <div class="add">
+                 <h4 class="pz">10000$</h4>
+              <button class="cartbu"id="btn">Add to cart</button>
+                 <div class="qty3">
+                 <h4> qty</h4>
+              <input class="qty2" type="number">
+                 </div>
+                 </div>
+              
+          
+         </div></td></tr><tr><td><div class="c3" id='asus'><h1 >asus zenbook 13 oled</h1>
+             <h5 class="in">in stock</h5>
+              <p>core i7 11th gen procescor oled display 12ram 265 gb</p>
+             <img src="download%20(2).jpeg" width="30%">
+             
+             <div class="add">
+                 <h4 class="pz">12000$</h4>
+              <button class="cartbu"id="btn">Add to cart</button>
+                <div class="qty3">
+                 <h4> qty</h4>
+              <input class="qty2" type="number">
+                 </div> 
+                 </div>
+              
+          
+         </div></td><td><div class="c3" id='asus asuse'><h1 id='title'></h1>
+             <h5 class="in" id='stat'>in stock</h5>
+              <p id='desc'></p>
+             
+             
+             <div class="add">
+                 <h4 class="pz" id=price></h4>
+              <button class="cartbu" id="btn">Add to cart</button>
+                 <div class="qty3">
+                 <h4> qty</h4>
+              <input class="qty2" type="number">
+                 </div>
+                 
+                 </div>
+              
+          
+         </div></td></tr></table>
+        
+         
+                
+          
+       
+       
+          </div>
+      
+       
+   
+    <script>
+        
+    var icon = document.getElementById('d');
+var list = document.getElementById('list');
+        list.style.display='none'
+var ms;
+ms = 'c';
+icon.onclick =function(){
+if(ms=='c'){
+    icon.src = 'close.png';
+    list.style.display = 'block';
+      list.style.marginLeft= '698px;';
+   icon.style.width='19px'
+    ms='o';
+console.log('menu opened');
+}
+   else{
+    icon.src = 'list%20(1).png';
+    list.style.display = 'none';
+          icon.style.width='53px'
+    ms='c';
+      
+console.log('menu closed');}
+}
+    var search=document.getElementById('sss');
+var mobi=document.getElementById('mobiles');
+var moni=document.getElementById('monitors');
+var lap=document.getElementById('laptops');
+var iphone=document.getElementById('iphones');
+var acs=document.getElementById('mobilea')
+search.onclick=function(){var research =prompt('what are you looking for'); 
+      if(research=='monitors'){mobi.style.display='none'; lap.style.display='none';iphone.style.display='none';
+                             acs.style.display='none'; moni.style.width='20%'}
+                         else if(research=='mobiles'){mobi.style.display='block'; lap.style.display='none';iphone.style.display='none';
+                             acs.style.display='none'; moni.style.display='none'}
+                                else if(research=='iphones'){mobi.style.display='none'; lap.style.display='none';iphone.style.display='block';
+                             acs.style.display='none'; moni.style.display='none'}
+                                                  else if(research=='laptops'){mobi.style.display='none'; lap.style.display='block';iphone.style.display='none';lap.style.width='20%';
+                             acs.style.display='none'; moni.style.display='none'}
+                            else if(research=='mobile accessories'){mobi.style.display='none'; lap.style.display='none';iphone.style.display='none';lap.style.width='20%';
+                             acs.style.display='block'; moni.style.display='none'}
+                          else{alert('search failed try again');mobi.style.display='block'; lap.style.display='block';iphone.style.display='block';
+                             acs.style.display='block'; moni.style.display='block';lap.style.width='20%';moni.style.width='20%';}}
+                        var btn=document.getElementById('btn');
+      
+        var product=document.getElementById('asuse');
+        product.style.display='none';
+        var sell=document.getElementById('sellx');
+              var title=document.getElementById('title');
+               var desc=document.getElementById('desc');
+               var price=document.getElementById('price');
+        sell.onclick=function(){var n3=prompt('enter the product title(name)'); var d4=prompt('enter the description of your product'); var  f5x=prompt('enter price'); var sta2=prompt('is the product avilable now in your store write in stock or out of stock'); alert('confirm'); title.innerHTML=n3; desc.innerHTML=d4;price.innerHTML=fx5; product.style.display='block' ;}
+    
+    </script>
+    </body>
+
+
+        
+</html>
